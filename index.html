@@ -55,13 +55,13 @@
 
         <script>
             var elements = document.querySelectorAll( 'article a' );
-            
+            var open;
             var GifLinks = (function() {
 
-  'use strict';
+ 
   var body;
   var container;
-
+  
   /* -------------------------
   /*          UTILS
   /* -------------------------*/
@@ -139,7 +139,13 @@
      // "Party on Wayne" ~ "Party on Garth"
     element.addEventListener( 'mouseover',  function() { startPartying( this ); }, false );
     element.addEventListener( 'touchstart', function() { startPartying( this ); }, false);
-    element.addEventListener( 'click',        function() { startPartying( this ); }, false);
+    
+    element.addEventListener( 'click',        function(){
+    	if(!open){
+    	startPartying( this );
+    	}else{stopPartying() }
+    	
+    }, false);
 
     // Someone called the cops.
     element.addEventListener( 'mouseout',     function() { stopPartying(); }, false);
@@ -186,7 +192,7 @@
 
   // Add the background to the container, and the container to the page!
   function startPartying( element ) {
-
+    open = true;
     var awesomeGif = element.getAttribute( 'data-src' );
     if( awesomeGif ) {
       container.style[ 'backgroundImage' ] = 'url(' + awesomeGif + ')';
@@ -198,7 +204,7 @@
 
   // Hide the container
   function stopPartying() {
-
+    open = false;
     container.style[ 'display' ] = 'none';
     container.style[ 'backgroundImage' ] = '';
   }
