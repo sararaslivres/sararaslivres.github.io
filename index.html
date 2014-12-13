@@ -139,6 +139,7 @@
      // "Party on Wayne" ~ "Party on Garth"
     element.addEventListener( 'mouseover',  function() { startPartying( this ); }, false );
     element.addEventListener( 'touchstart', function() { startPartying( this ); }, false);
+    element.addEventListener( 'click',        function() { startPartying( this ); }, false);
 
     // Someone called the cops.
     element.addEventListener( 'mouseout',     function() { stopPartying(); }, false);
