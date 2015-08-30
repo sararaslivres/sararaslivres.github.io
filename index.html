@@ -1,223 +1,313 @@
-<!doctype html>
-<html>
-    <head>
-        <title> Festa! </title>
-		<meta charset="UTF-8">
-		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-		
-        <!-- CSS -->
-        <link href='./css/styles.css' rel='stylesheet'>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sararás Livres</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sararas.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href
 
 
-		        
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    </head>
-    <body>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+            
+
+	
+	<style>
+    .carousel-inner{
+  width:100%;
+  max-height: 500px !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+    </style>
+	
+    <div class="container">
+
+
+        <nav id='cabecalho' class="navbar-fixed-top navbar-default" role="navigation">
+        <div id='containetCabecalho' class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+        
+                
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="butaoMobile" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+         
+            <!-- Collect the nav links, forms, and other content for toggling -->
+             
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
 
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : 1593303987623432,
-          xfbml      : true,
-          version    : 'v2.3'
-        });
-      };
+                <a id='btnHome'class="nav navbar-brand page-scroll" href="#page-top">
+                   SARARÁS LIVRES
+                </a>
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "http://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
+                <ul class="nav navbar-nav">
+             
 
-	<h1> The Outlaws </h1>
+                    <li>
+                        <a  id='btnÁlbum' href="#!">ÁLBUM</a>
+                    </li>
+                    <li>
+                        <a id='btnBanda' href="#!">BANDA</a>
+                    </li>
+                    <li>
+                        <a id='btnFoto' href="#!">FOTO</a>
+                    </li>
+                    <li>
+                        <a id='btnVideo' href="#!">VÍDEO</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+		<div id='espacoinicio' class="box" >
+                
+                        <a href="Sararas Livres - Associacao Livre.zip" download="Sararas Livres - Associacao Livre">
+                        <div  id="baixe-album">
+                            <img style="width:118px; height:118px; clear:both;" src='img/associacao_livre_capa.jpg'>
+                        
+                             <div type="button" style="clear:both;display:block; color:white; cursor:pointer; font-size:11.5px; text-decoration:none;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-download"> </span> Baixe o Álbum</div>
+                        </div>
+                        </a>
+          
+            </div>
+			
+            <div class="box">
+		<div id="album" class="row">
+            
+                <div class="col-sm-12">
+<h2 class="intro-text text-center">Álbum
+                    </h2>
+                    <hr class='bottom_hr'>
+                    <div class="col-sm-6">
+						<a href="Sararas Livres - Associacao Livre.zip" download="Sararas Livres - Associacao Livre">
+						<div id="album-box">
+							<img class="com-borda" id='album-img' src='img/associacao_livre_capa.jpg'>
+						
+						</div>
+						</a>
+					</div>
+					<div class="col-sm-6">
 
-<div
-  class="fb-like"
-  data-send="true"
-  data-width="450"
-  data-show-faces="true">
-Didnt work
-</div>
+					<p style="line-height: 1;" id='album_intro'> Associação Livre, primeiro álbum da banda Sararás Livres, lançado em 2015. </p>
+					
+					<ol id='lista_musicas'>
+						<li> A CAVERNA </li>
+						<li> UM CAMINHO </li>
+						<li> POR SI SÓ </li>
+						<li> AO SONHAR  </li>
+						<li> TEMPOS PERDIDOS  </li>
+						<li> FONTE DA SAUDADE  </li>
+						<li> SE O FUTURO VIVE </li>
+						<li> DOIS MINUTOS NO ESPAÇO </li>
+						<li> DESREVELAR </li>
+						<li> O BARCO </li>
+					</ol>
 
-
-
-
-
-
-      
-        <header>
-            <div class="container">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="./img/header_front_transparente.png" />
+                    <p style="margin-left: 15px; line-height: 1;"> <small> Arte:</small> LUIZ STEIN </p>
+                    <p style="margin-left: 15px; line-height: 1;"> <small> Foto:</small> CAROL PERDIGÃO </p>
+					</div>
                 </div>
             </div>
-        </header>
-        <article>
-           <p>
-		   Chegou o grande momento. Pedro e Marcos, os maiores <strike>traders</strike> <a data-src="./img/analista.gif" class=" giflink ready no-link">analistas de backoffice</a> do mercado financeiro se juntam para celebrar seus aniversários.
-		   </p>
-		   <p>
-		   Isso mesmo, os Lobos do Mourisco se uniram para essa celebração. Você está convidado para a maior festa do ano, repleta de <a data-src="./img/bebida.gif" class=" giflink ready no-link">bebidas</a>, <a data-src="./img/musica.gif" class=" giflink ready no-link">música</a>, <a data-src="./img/ludes.gif" class=" giflink ready no-link">ludes</a> e é claro, <a data-src="./img/anao.gif" class=" giflink ready no-link">anões</a>.
-		   </p>
-		   <p>
-		   Mentira... a comemoração será na minha humilde residência, e como ainda estou traumatizado da <a data-src="./img/indio.gif" class=" giflink ready no-link">festa dos Indios vs Colonizadores</a>, tudo começará mais tranquilo.
-		   </p>
-		   <p>
-		   - Começará? Como assim? Depois vira <a data-src="./img/giflinks.gif" class=" giflink ready no-link">chapa crazy</a> ?
-		   </p>
-		   <p>
-		   Quase isso. Por volta de 01:00, a caravana que já estiver em <a data-src="./img/ritmo.gif" class=" giflink ready no-link">ritmo de festa</a>  se locomoverá para o Bukowski, onde todos poderão liberar a energia acumulada pelas bebidas previamente consumidas.
-		   </p>
-		   
-		   <p>
-		   Informações: <br> A partir das 21:00 - Rua Almirante Tamandaré 53/701 - Flamengo. <br> Sábado 20/12/2014!
-		   </p>
-
-		   
-		   
-		</article>
+        </div>
 		
+         <div class="box">
+        <div id="banda" class="row">
+           
+                <div class="col-sm-12">
+				
+         <h2 class="intro-text text-center">Banda
+                    </h2>
+                    <hr class='bottom_hr'>
+					<div class="col-sm-6">
+					<img class="com-borda"  style="width: 100%; margin-bottom: 50px;" src="img/sararas_cactus.png">
+				</div>
+				<div class="col-sm-6">
+								
+                    <p>Os Sararás Livres saíram de sua caverna nos idos de
+2007, em busca de um caminho próprio. Começaram
+a compor por si sós, misturando o experimentalismo
+musical com letras que falam sobre as múltiplas e
+possíveis apreensões dos tempos passado, presente e
+futuro, a partir de uma linguagem onírica. A fonte da
+saudade de um amanhã incógnito, seu hábitat natural
+em pleno Rio de Janeiro selvagem, desrevela agora ao
+mundo, em 2015, o primeiro barco-álbum da banda:
+Associação Livre. Dois minutos no espaço de uma
+viagem entre o que temos de mais instintivo e o absurdo
+concreto da vida nas cidades contemporâneas.</p>
+                </div>
+				</div>
+            </div>
+        </div>
 		
+        <div class="box">
+		<div id="foto" class="row">
+       
+                <div class="col-sm-12 text-center">
+				      <h2 class="intro-text text-center">Fotos
+                    </h2>
+                    <hr class='bottom_hr'>              
+        
+                    <div class="carousel slide" id="my-carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#my-carousel" data-slide-to="1"></li>
+                            <li data-target="#my-carousel" data-slide-to="2"></li>
+                            <li data-target="#my-carousel" data-slide-to="3"></li>
+                            <li data-target="#my-carousel" data-slide-to="4"></li>
+                            <li data-target="#my-carousel" data-slide-to="5"></li>
+                            <li data-target="#my-carousel" data-slide-to="6"></li>
+                            <li data-target="#my-carousel" data-slide-to="7"></li>
+                            <li data-target="#my-carousel" data-slide-to="8"></li>
+                            <li data-target="#my-carousel" data-slide-to="9"></li>
+                        </ol>
 
-        <script>
-            var elements = document.querySelectorAll( 'article a' );
-            
-            var GifLinks = (function() {
-  'use strict';
-  var body;
-  var container;
-  /* -------------------------
-  /*          UTILS
-  /* -------------------------*/
-  // Soft object augmentation
-  function extend( target, source ) {
-    for ( var key in source ) {
-      if ( !( key in target ) ) {
-        target[ key ] = source[ key ];
-      }
-    }
-    return target;
-  }
-  // Applys a dict of css properties to an element
-  function applyProperties( target, properties ) {
-    for( var key in properties ) {
-      target.style[ key ] = properties[ key ];
-    }
-  }
-  /* -------------------------
-  /*          App
-  /* -------------------------*/
-  // Initialize
-  function init( elements, preload ) {
-    if ( elements.length ) {
-      // Loop and assign
-      for( var i = 0; i < elements.length; i++ ) {
-        if ( preload === true ) {
-          preloadAndTrack( elements[ i ] );
-        } else {
-          track( elements[ i ] );
-        }
-      }
-    } else {
-       if ( preload === true ) {
-        preloadAndTrack( elements );
-      } else {
-        track( elements );
-      }
-    }
-  }
-  // Start tracking after preload
-  function preloadAndTrack( element ) {
-    var awesomeGif = element.getAttribute( 'data-src' );
-    if ( awesomeGif ) {
-      // Load the image
-      var img = new Image();
-      img.onload = function() {
-        element.className += ' preloaded'
-        track( element )
-      }
-      img.src = awesomeGif;
-    }
-  }
-  // Start tracking mouse hovers
-  function track( element ) {
-     // "Party on Wayne" ~ "Party on Garth"
-    element.addEventListener( 'mouseover',  function() { startPartying( this ); }, false );
-    element.addEventListener( 'touchstart', function() { startPartying( this ); }, false);
-    element.addEventListener( 'click',        function() { startPartying( this ); }, false);
-    // Someone called the cops.
-    element.addEventListener( 'mouseout',     function() { stopPartying(); }, false);
-   // element.addEventListener( 'touchmove',    function( event ) { event.preventDefault(); stopPartying(); }, false);
-   // element.addEventListener( 'click',        function() { stopPartying(); }, false);
-   // element.addEventListener( 'dblclick',     function() { stopPartying(); }, false);
-    addClasses( element );
-  }
-  // Adds classes to do with giflink status (has link etc)
-  function addClasses( element ) {
-    element.className += ' giflink ready';
-    if ( element.href ) {
-      element.className += ' has-link';
-    } else {
-      element.className += ' no-link';
-    }
-  }
-  // Create and cache the gif container.
-  function createContainer() {
-    var containerProperties = {
-      'backgroundPosition': '50% 50%',
-      'backgroundSize': 'cover',
-      'pointerEvents': 'none',
-      'position': 'fixed',
-      'zIndex': '999999',
-      'display': 'none',
-      'height': '100%',
-      'width': '100%',
-      'margin': '0px',
-      'left': '0px',
-      'top': '0px',
-    }
-    container = document.createElement( 'div' );
-    applyProperties( container, containerProperties );
-    body.appendChild( container );
-  }
-  // Add the background to the container, and the container to the page!
-  function startPartying( element ) {
-    var awesomeGif = element.getAttribute( 'data-src' );
-    if( awesomeGif ) {
-      container.style[ 'backgroundImage' ] = 'url(' + awesomeGif + ')';
-      container.style[ 'display' ] = 'block';
-    } else {
-      console.log( "Sorry, an element doesn't have a data-src!" );
-    }
-  }
-  // Hide the container
-  function stopPartying() {
-    container.style[ 'display' ] = 'none';
-    container.style[ 'backgroundImage' ] = '';
-  }
-  function main( elements, options ) {
-    // Caching
-    body = document.body;
-    createContainer();
-    var preload = false;
-    if ( options && options.preload ) {
-      preload = !!options.preload;
-    }
-    // Initialize giflinks
-    init( elements, preload );
-  }
-  return extend( main, {
-  });
-})();
-            
-            GifLinks( elements );
-			
-        </script>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" style="max-height: 70%">
+                            <div class="item active">
+                                <img class="caroseul-img img-responsive img-full" src="img/sararas-livres-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-4.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-5.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-6.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-7.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img img-responsive img-full" src="img/sararas-livres-8.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-9.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#my-carousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#my-carousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+           <div class="box" style="background-color: transparent;">
+		<div id="video" class="row">
+         
+                <div style="margin: 0 auto;" class="col-sm-12">
+		<h2 class="intro-text text-center">Video
+                    </h2>
+                    <hr class='bottom_hr'>
+					<iframe class="com-borda" align="middle" id='video_clip' style="margin: 0 auto; display:block;" src="http://www.youtube.com/embed/QPb4drrMACo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+<br>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    </br>
+                    contatosararaslivres@gmail.com </br>
+                    (21) 98790 3008
+                </div>
+                <div style="float:left;">
+					<a href=https://www.facebook.com/sararaslivres> <img src="img/icons/facebook.png" style="width:64px"> </a>
+                </div>
+<div style="float:left;">
+					<a href=https://soundcloud.com/sararaslivres/> <img src="img/icons/soundcloud.png" style="width:64px"> </a>
+                </div>
+<div  style="float:left;">
+					<a href=https://www.youtube.com/channel/UC550zOIS0v4MxCp60tNRPTQ> <img src="img/icons/youtube.png" style="width:64px"> </a>
+                </div>
+
+<div  style="float:left;">
+<a  href=https://www.twitter.com/sararaslivres>
+<img style="width:64px"  src="img/icons/twitter.png">
+</a>
+                </div>
+
+            </div>
+<br>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/lib/jquery-scrollto.js"></script>
+	<!-- Custom -->
+    <script src="js/sararascript.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
 </html>
