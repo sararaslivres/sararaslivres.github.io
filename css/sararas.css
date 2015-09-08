@@ -1,0 +1,383 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+
+#baixe-album{ position:absolute; top:70%;}
+
+*{
+    font-weight: normal !important;
+}
+
+#cabecalho{
+background-color: transparent;
+
+}
+
+
+
+@font-face {
+     font-family: EuclidFlex-Light;
+     src: url('fonts/euclidflex-light-webfont.ttf'); 
+}
+ 
+ body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/sararas_livres_banda_rock.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a{
+	color:white;
+	font-family: EuclidFlex-Light;
+    clear:both ;
+
+}
+
+#bs-example-navbar-collapse-1 {
+    font-size: 10px;
+    }
+
+#btnHome{
+    color:white;
+    font-family: EuclidFlex-Light;
+    font-size: 13px;
+
+}
+
+#lista_musicas{
+	line-height: 2.2;
+    font-size: 11.5px
+}
+
+#album-box{
+	text-align: center;
+	
+}
+
+#album-img{
+	margin-bottom: 15px;
+	height: 250px;
+}
+
+
+
+p {
+    font-size: 1em;
+    color: #000;
+}
+
+
+.left-album-box{
+	display: inline;
+	float: left;
+	height: 100%;
+	width: 60%;
+}
+
+.right-album-box{
+    display: inline;
+	height: 100%;
+	float: left;
+	width: 40%;
+}
+
+#album_intro{
+	font-size: 1em;
+	margin-bottom: 22px;
+    margin-left: 15px;
+}
+hr {
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+
+
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+#espacoinicio{
+	z-index: -10000;
+	background: rgba(0,0,0,0);
+	margin-bottom: 85vh !important;
+}
+
+.box {
+	z-index: 1000;
+    margin-bottom: 50%;
+    padding: 30px 15px;
+    background: #fff;
+	min-height: 200px;
+    background: white;
+	border-radius: 0px;
+}
+
+
+
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.bottom_hr{
+	margin-top: 9px;
+	margin-bottom: 45px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+#video_clip{
+	height: 65vh;
+}
+
+.intro-text{
+font-size:1.5em;
+}
+
+.intro-text{
+    display: none;
+
+}
+
+
+hr{
+    display:none;
+}
+@media screen and (min-width:768px) {
+
+
+
+	.box {
+
+	min-height: 50vh;
+
+
+
+
+}
+
+
+
+#album-box{
+	text-align: center;
+}
+
+#album-img{
+	margin: auto;
+	height: 350px;
+	width: 350px;
+	margin-bottom: 15px;
+	display: block;
+}
+
+#cabecalho{
+background-color: transparent;
+z-index: 0;
+}
+
+#espacoinicio{
+	background: rgba(0,0,0,0);
+	margin-bottom: 30%;
+}
+
+#video_clip{
+	height: 60vh;
+}
+
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+		background: rgba(255,255,255,0);
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+		background: rgba(255,255,255,0);
+		
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0);
+		float: right;
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: right;
+        
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+		
+    }
+}
+
+@media screen and (min-width:800px) {
+    #btnHome{
+    display: block;
+}
+    .box: {
+        max-height: 85vh;
+		
+    }
+	#containetCabecalho{
+	background-color: transparent;
+	margin-right: none;
+}
+
+#my-carousel img {
+
+  min-width: 0;
+  max-width: none ;
+  min-height: 0 ;
+  max-height: none ;
+}
+
+
+#my-carousel img{height: 400px;}
+.box{height: 450px;}
+}
+
+
+.com-borda{
+    border: 2px solid purple;
+
+}
+
+a, p, li, h1, h2, h3, h4, h5, h6, h7{
+	color:rgb(135,63,36);
+	font-family:EuclidFlex-Light;
+	font-weight: bold;
+}
+
+p{
+	line-height: 5vh;
+	font-weight: normal;
+	text-align: justify;
+}	
+
+
+@media screen and (min-width:500px) {
+#btnÁlbum, #btnBanda, #btnFoto, #btnVideo, #btnHome{
+	padding: 3px;
+	margin: 28px;
+	
+	
+}
+
+
+.withBorder{
+	border-top: 1px white solid;
+}
+
+
+#album p{
+    font-size: 11.5px;
+}
+
