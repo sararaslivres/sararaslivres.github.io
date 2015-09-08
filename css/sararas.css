@@ -357,7 +357,7 @@ a, p, li, h1, h2, h3, h4, h5, h6, h7{
 }
 
 p{
-	line-height: 5vh;
+	line-height: 32px;
 	font-weight: normal;
 	text-align: justify;
 }	
