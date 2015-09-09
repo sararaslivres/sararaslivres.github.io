@@ -3,29 +3,26 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Sararás Livres</title>
+  <title>Sararás Livres</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/sararas.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/sararas.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-    <link href
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+  <link href <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -34,279 +31,301 @@
 
 <body>
 
-    <!-- Navigation -->
+  <!-- Navigation -->
 
+  <style>
+    .carousel-inner {
+      width: 100%;
+      max-height: 500px !important;
+    }
+    
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
 
+  <div class="container">
 
+    <nav id='cabecalho' class="navbar-fixed-top navbar-default" role="navigation">
+      <div id='containetCabecalho' class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
 
-	<style>
-    .carousel-inner{
-  width:100%;
-  max-height: 500px !important;
-}
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="butaoMobile">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-::-webkit-scrollbar {
-    display: none;
-}
-    </style>
+        <!-- Collect the nav links, forms, and other content for toggling -->
 
-    <div class="container">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
-        <nav id='cabecalho' class="navbar-fixed-top navbar-default" role="navigation">
-        <div id='containetCabecalho' class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="butaoMobile" >
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-
-                <a id='btnHome'class="nav navbar-brand page-scroll" href="#page-top">
+          <a id='btnHome' class="nav navbar-brand page-scroll" href="#page-top">
                    SARARÁS LIVRES
                 </a>
 
-                <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav">
 
-
-                    <li>
-                        <a  id='btnÁlbum' href="#!">ÁLBUM</a>
-                    </li>
-                    <li>
-                        <a id='btnBanda' href="#!">BANDA</a>
-                    </li>
-                    <li>
-                        <a id='btnFoto' href="#!">FOTO</a>
-                    </li>
-                    <li>
-                        <a id='btnVideo' href="#!">VÍDEO</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <li>
+              <a id='btnÁlbum' href="#!">ÁLBUM</a>
+            </li>
+            <li>
+              <a id='btnBanda' href="#!">BANDA</a>
+            </li>
+            <li>
+              <a id='btnFoto' href="#!">FOTO</a>
+            </li>
+            <li>
+              <a id='btnVideo' href="#!">VÍDEO</a>
+            </li>
+          </ul>
         </div>
-        <!-- /.container -->
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
     </nav>
 
-		<div id='espacoinicio' class="box" >
+    <div id='espacoinicio' class="box">
 
-                        <a href="Sararas Livres - Associacao Livre.zip" download="Sararas Livres - Associacao Livre">
-                        <div  id="baixe-album">
-                            <img style="width:118px; height:118px; clear:both;" src='img/associacao_livre_capa.jpg'>
+      <a href="Sararas Livres - Associacao Livre.zip" download="Sararas Livres - Associacao Livre">
+        <div id="baixe-album">
+          <img style="width:118px; height:118px; clear:both;" src='img/associacao_livre_capa.jpg'>
 
-                             <div type="button" style="clear:both;display:block; color:white; cursor:pointer; font-size:11.5px; text-decoration:none;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-download"> </span> Baixe o Álbum</div>
-                        </div>
-                        </a>
-
-            </div>
-
-            <div class="box">
-		<div id="album" class="row">
-
-                <div class="col-sm-12">
-<h2 class="intro-text text-center">Álbum
-                    </h2>
-                    <hr class='bottom_hr'>
-                    <div class="col-sm-6">
-						<a href="Sararas Livres - Associacao Livre.zip" download="Sararas Livres - Associacao Livre">
-						<div id="album-box">
-							<img class="com-borda" id='album-img' src='img/associacao_livre_capa.jpg'>
-
-						</div>
-						</a>
-					</div>
-					<div class="col-sm-6">
-
-					<p style="line-height: 1;" id='album_intro'> Associação Livre, primeiro álbum da banda Sararás Livres, lançado em 2015. </p>
-
-					<ol id='lista_musicas'>
-						<li> A CAVERNA </li>
-						<li> UM CAMINHO </li>
-						<li> POR SI SÓ </li>
-						<li> AO SONHAR  </li>
-						<li> TEMPOS PERDIDOS  </li>
-						<li> FONTE DA SAUDADE  </li>
-						<li> SE O FUTURO VIVE </li>
-						<li> DOIS MINUTOS NO ESPAÇO </li>
-						<li> DESREVELAR </li>
-						<li> O BARCO </li>
-					</ol>
-
-                    <p style="margin-left: 15px; line-height: 1;"> <small> Arte:</small> LUIZ STEIN </p>
-                    <p style="margin-left: 15px; line-height: 1;"> <small> Foto:</small> CAROL PERDIGÃO </p>
-					</div>
-                </div>
-            </div>
+          <div type="button" style="clear:both;display:block; margin-top:5px; color:white; cursor:pointer; font-size:11.5px; text-decoration:none;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-download"> </span> Download </div>
         </div>
+      </a>
 
-         <div class="box">
-        <div id="banda" class="row">
-
-                <div class="col-sm-12">
-
-         <h2 class="intro-text text-center">Banda
-                    </h2>
-                    <hr class='bottom_hr'>
-					<div class="col-sm-6">
-					<img class="com-borda"  style="width: 100%; margin-bottom: 50px;" src="img/sararas_cactus.png">
-				</div>
-				<div class="col-sm-6">
-
-                    <p>Os Sararás Livres saíram de sua caverna nos idos de
-2007, em busca de um caminho próprio. Começaram
-a compor por si sós, misturando o experimentalismo
-musical com letras que falam sobre as múltiplas e
-possíveis apreensões dos tempos passado, presente e
-futuro, a partir de uma linguagem onírica. A fonte da
-saudade de um amanhã incógnito, seu hábitat natural
-em pleno Rio de Janeiro selvagem, desrevela agora ao
-mundo, em 2015, o primeiro barco-álbum da banda:
-Associação Livre. Dois minutos no espaço de uma
-viagem entre o que temos de mais instintivo e o absurdo
-concreto da vida nas cidades contemporâneas.</p>
-                </div>
-				</div>
-            </div>
-        </div>
-
-        <div class="box">
-		<div id="foto" class="row">
-
-                <div class="col-sm-12 text-center">
-				      <h2 class="intro-text text-center">Fotos
-                    </h2>
-                    <hr class='bottom_hr'>
-
-                    <div class="carousel slide" id="my-carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#my-carousel" data-slide-to="1"></li>
-                            <li data-target="#my-carousel" data-slide-to="2"></li>
-                            <li data-target="#my-carousel" data-slide-to="3"></li>
-                            <li data-target="#my-carousel" data-slide-to="4"></li>
-                            <li data-target="#my-carousel" data-slide-to="5"></li>
-                            <li data-target="#my-carousel" data-slide-to="6"></li>
-                            <li data-target="#my-carousel" data-slide-to="7"></li>
-                            <li data-target="#my-carousel" data-slide-to="8"></li>
-                            <li data-target="#my-carousel" data-slide-to="9"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" style="max-height: 70%">
-                            <div class="item active">
-                                <img class="caroseul-img img-responsive img-full" src="img/sararas-livres-1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-3.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-4.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-5.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-6.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-7.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img img-responsive img-full" src="img/sararas-livres-8.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-9.jpg" alt="">
-                            </div>
-
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#my-carousel" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#my-carousel" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-           <div class="box" style="background-color: transparent;">
-		<div id="video" class="row">
-
-                <div style="margin: 0 auto;" class="col-sm-12">
-		<h2 class="intro-text text-center">Video
-                    </h2>
-                    <hr class='bottom_hr'>
-					<iframe class="com-borda" align="middle" id='video_clip' style="margin: 0 auto; display:block;" src="http://www.youtube.com/embed/QPb4drrMACo" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- /.container -->
 
-    <footer>
-        <div class="container">
-<br>
+    <div class="box">
+      <div id="album" class="row">
 
-            <div class="row">
-                <div class="col-sm-7">
-                    </br>
-                    contatosararaslivres@gmail.com </br>
-                    (21) 98790 3008
-                </div>
-                <div style="float:left;">
-					<a href=https://www.facebook.com/sararaslivres> <img src="img/icons/facebook.png" style="width:64px"> </a>
-                </div>
-<div style="float:left;">
-					<a href=https://soundcloud.com/sararaslivres/> <img src="img/icons/soundcloud.png" style="width:64px"> </a>
-                </div>
-<div  style="float:left;">
-					<a href=https://www.youtube.com/channel/UC550zOIS0v4MxCp60tNRPTQ> <img src="img/icons/youtube.png" style="width:64px"> </a>
-                </div>
+        <div class="col-sm-12">
+          <h2 class="intro-text text-center">Álbum
+                    </h2>
+          <hr class='bottom_hr'>
+          <div class="col-sm-6">
+            <a href="Sararas Livres - Associacao Livre.zip" download="Sararas Livres - Associacao Livre">
+              <div id="album-box">
+                <img class="com-borda" id='album-img' src='img/associacao_livre_capa.jpg'>
 
-<div  style="float:left;">
-<a  href=https://www.twitter.com/sararaslivres>
-<img style="width:64px"  src="img/icons/twitter.png">
-</a>
-                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+
+            <p style="line-height: 1;" id='album_intro'> Associação Livre, primeiro álbum da banda Sararás Livres, lançado em 2015. </p>
+
+            <ol id='lista_musicas'>
+              <li> A CAVERNA </li>
+              <li> UM CAMINHO </li>
+              <li> POR SI SÓ </li>
+              <li> AO SONHAR </li>
+              <li> TEMPOS PERDIDOS </li>
+              <li> FONTE DA SAUDADE </li>
+              <li> SE O FUTURO VIVE </li>
+              <li> DOIS MINUTOS NO ESPAÇO </li>
+              <li> DESREVELAR </li>
+              <li> O BARCO </li>
+            </ol>
+
+            <p style="margin-left: 15px; line-height: 1;"> <small> Arte:</small> LUIZ STEIN </p>
+            <p style="margin-left: 15px; line-height: 1;"> <small> Foto:</small> CAROL PERDIGÃO </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div id="banda" class="row">
+
+        <div class="col-sm-12">
+
+          <h2 class="intro-text text-center">Banda
+                    </h2>
+          <hr class='bottom_hr'>
+          <div class="col-sm-6">
+            <img class="com-borda" style="width: 100%; margin-bottom: 50px;" src="img/sararas_cactus.png">
+          </div>
+          <div class="col-sm-6">
+
+            <p>Os Sararás Livres saíram de sua caverna nos idos de 2007, em busca de um caminho próprio. Começaram a compor por si sós, misturando o experimentalismo musical com letras que falam sobre as múltiplas e possíveis apreensões dos tempos passado, presente e futuro, a partir de uma linguagem onírica. A fonte da saudade de um amanhã incógnito, seu hábitat natural em pleno Rio de Janeiro selvagem, desrevela agora ao mundo, em 2015, o primeiro barco-álbum da banda: Associação Livre. Dois minutos no espaço de uma viagem entre o que temos de mais instintivo e o absurdo concreto da vida nas cidades contemporâneas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div id="foto" class="row">
+
+        <div class="col-sm-12 text-center">
+          <h2 class="intro-text text-center">Fotos
+                    </h2>
+          <hr class='bottom_hr'>
+
+          <div class="carousel slide" id="my-carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators hidden-xs">
+              <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#my-carousel" data-slide-to="1"></li>
+              <li data-target="#my-carousel" data-slide-to="2"></li>
+              <li data-target="#my-carousel" data-slide-to="3"></li>
+              <li data-target="#my-carousel" data-slide-to="4"></li>
+              <li data-target="#my-carousel" data-slide-to="5"></li>
+              <li data-target="#my-carousel" data-slide-to="6"></li>
+              <li data-target="#my-carousel" data-slide-to="7"></li>
+              <li data-target="#my-carousel" data-slide-to="8"></li>
+              <li data-target="#my-carousel" data-slide-to="9"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="max-height: 70%">
+              <div class="item active">
+                <img class="caroseul-img img-responsive img-full" src="img/sararas-livres-1.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-2.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-3.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-4.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-5.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-6.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-7.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img img-responsive img-full" src="img/sararas-livres-8.jpg" alt="">
+              </div>
+              <div class="item">
+                <img class="caroseul-img  img-responsive img-full" src="img/sararas-livres-9.jpg" alt="">
+              </div>
 
             </div>
-<br>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#my-carousel" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#my-carousel" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-	<script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/lib/jquery-scrollto.js"></script>
-	<!-- Custom -->
-    <script src="js/sararascript.js"></script>
+    <div class="box" style="background-color: transparent;">
+      <div id="video" class="row">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+   	        <div class="col-sm-12 text-center">
+          <h2 class="intro-text text-center">Fotos
+                    </h2>
+          <hr class='bottom_hr'>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
+          <div class="carousel slide" id="my-carousel-video">
+            <!-- Indicators -->
+            <ol class="carousel-indicators hidden-xs">
+              <li data-target="#my-carousel-video" data-slide-to="0" class="active"></li>
+              <li data-target="#my-carousel-video" data-slide-to="1"></li>
+              <li data-target="#my-carousel-video" data-slide-to="2"></li>
+              <li data-target="#my-carousel-video" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="max-height: 70%">
+              <div class="item active">
+                
+          <iframe class="com-borda" align="middle" id='video_clip' style="margin: 0 auto; display:block;" src="http://www.youtube.com/embed/QPb4drrMACo" frameborder="0" allowfullscreen></iframe>
+       
+              </div>
+              <div class="item">
+               
+          <iframe class="com-borda" align="middle" id='video_clip' style="margin: 0 auto; display:block;" src="http://www.youtube.com/embed/QPb4drrMACo" frameborder="0" allowfullscreen></iframe>
+       
+              </div>
+              <div class="item">
+          
+          <iframe class="com-borda" align="middle" id='video_clip' style="margin: 0 auto; display:block;" src="http://www.youtube.com/embed/QPb4drrMACo" frameborder="0" allowfullscreen></iframe>
+       
+              </div>
+              <div class="item">
+         
+          <iframe class="com-borda" align="middle" id='video_clip' style="margin: 0 auto; display:block;" src="http://www.youtube.com/embed/QPb4drrMACo" frameborder="0" allowfullscreen></iframe>
+       
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#my-carousel-video" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#my-carousel-video" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <footer>
+    <div class="container">
+      <br>
+
+      <div class="row">
+        <div class="col-sm-7">
+          </br>
+          contatosararaslivres@gmail.com </br>
+          (21) 98790 3008
+        </div>
+        <div style="float:left;">
+          <a href=https://www.facebook.com/sararaslivres> <img src="img/icons/facebook.png" style="width:64px"> </a>
+        </div>
+        <div style="float:left;">
+          <a href=https://soundcloud.com/sararaslivres/> <img src="img/icons/soundcloud.png" style="width:64px"> </a>
+        </div>
+        <div style="float:left;">
+          <a href=https://www.youtube.com/channel/UC550zOIS0v4MxCp60tNRPTQ> <img src="img/icons/youtube.png" style="width:64px"> </a>
+        </div>
+
+        <div style="float:left;">
+          <a href=https://www.twitter.com/sararaslivres>
+            <img style="width:64px" src="img/icons/twitter.png">
+          </a>
+        </div>
+
+      </div>
+      <br>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script src="http://www.yoursite.com/somewhere/on/your/webserver/jquery-scrollto/lib/jquery-scrollto.js"></script>
+  <!-- Custom -->
+  <script src="js/sararascript.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Script to Activate the Carousel -->
+  <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+      interval: 5000 //changes the speed
     })
-    </script>
+  </script>
 
 </body>
 
