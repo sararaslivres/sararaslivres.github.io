@@ -1,8 +1,9 @@
 
 $( document ).ready(function() {
-	var act = "active"
+	
 $.getJSON('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBnsdQFFPtUP3VyEmPSoo5i8si1PtQFvUA&channelId=UC550zOIS0v4MxCp60tNRPTQ&part=snippet,id&order=date&maxResults=20',function(data,status,xhr){
 data.items.forEach(function(video){
+	var act = "active";
 if(video.id.videoId){
 	
 $("#vid-car").append(
