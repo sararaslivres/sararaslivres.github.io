@@ -1,3 +1,17 @@
+
+$( document ).ready(function() {
+$.getJSON('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBnsdQFFPtUP3VyEmPSoo5i8si1PtQFvUA&channelId=UC550zOIS0v4MxCp60tNRPTQ&part=snippet,id&order=date&maxResults=20',function(data,status,xhr){
+data.items.forEach(function(video){
+if(video.id.videoId){
+$("#vid-car").append(
+"<div class='item'><iframe class='com-borda' align='middle' id='video_clip' style='margin: 0 auto; display:block;' src='http://www.youtube.com/embed/" + video.id.videoId + "' frameborder='0' allowfullscreen=''></iframe></div>")
+
+}
+})
+});
+});
+
+
 $("#btnÁlbum").click(function(){
 
 
