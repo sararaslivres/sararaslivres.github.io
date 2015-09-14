@@ -2,13 +2,14 @@
 $( document ).ready(function() {
 	
 $.getJSON('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBnsdQFFPtUP3VyEmPSoo5i8si1PtQFvUA&channelId=UC550zOIS0v4MxCp60tNRPTQ&part=snippet,id&order=date&maxResults=20',function(data,status,xhr){
+var act = "active";
 data.items.forEach(function(video){
-	var act = "active";
+	
 if(video.id.videoId){
 	
 $("#vid-car").append(
 "<div class='item "+ act + "'><div class='embed-responsive embed-responsive-16by9'><iframe class='com-borda' align='middle' id='video_clip' style='margin: 0 auto; display:block;' src='http://www.youtube.com/embed/" + video.id.videoId + "' frameborder='0' allowfullscreen=''></iframe></div></div>")
-	var act= ""
+	act= ""
 }
 })
 });
