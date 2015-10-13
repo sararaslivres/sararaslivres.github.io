@@ -3,6 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
 
 #baixe-album{ position:absolute; top:70%;}
 
